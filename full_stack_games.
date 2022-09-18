@@ -1,5 +1,5 @@
 What is responsible for defining the routes of the games resource?
-The createRouter function in create_router.js and the functions therein are responisble for defining the RESTful routes of the games resource.
+The createRouter function in create_router.js and the functions therein are responsible for defining the RESTful routes of the games resource.
 
 What do you notice about the folder structure? Whats the client responsible for? Whats the server responsible for?
 The client is reponsible for all the front-end aspects of the package and the server is responsible for the back-end. The latter creates the routes and contains the link to the database and the former is responisble for how the page looks and operates. We have a division of responsibilities between front and back.
@@ -16,10 +16,9 @@ Through the package.json of server, it is set up to the index.html in the Client
 What optional second argument does the fetch method take? And what is it used for in this application? Hint: See Using Fetch on the MDN docs
 The second argument in the Fetch method takes in any custom methods the user wishes to apply to the request. In this application, the GamesService function creates multiple function for the various methods employed in the Games Container. These are for posting and deleting games. The postGame function in GamesService for example defines the method as post, stringifies the newGame dat, and sets the headers array.
 
-
 Which of the games API routes does the front-end application consume (i.e. make requests to)?
 The front-end consumes the baseURL in GamesService. GamesService fetches the data and converts it into JSON according to the parameters of the request. In the GamesContainer, this data is set into State for use by the front-end web display.
 
 What are we using the MongoDB Driver for?
-It allows NodeJS to connect and work with the data in the database.
+It allows NodeJS to connect and work with the data in the database. It allows the programmer to communicate with the database.
 
